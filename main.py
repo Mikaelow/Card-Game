@@ -1,4 +1,5 @@
-import pandas as pd
-
-cardsFromExcel = pd.read_excel('HearthstoneCardsList.xlsx', sheet_name='Sheet1')
-print(cardsFromExcel.head())
+from cards import Cards
+class main:
+    def __init__(self):
+        self.instancja_a = Cards()
+        print(self.instancja_a.getDateFromDatabase())
