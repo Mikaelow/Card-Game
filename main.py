@@ -1,5 +1,5 @@
-from cards import Cards
+from Servis.deckService import deckService
 class main:
-    def __init__(self):
-        self.instancja_a = Cards()
-        print(self.instancja_a.getDateFromDatabase())
+    deckPlayerA=deckService().getCardsToDeck()
+    print('')
+    deckPlayerB = deckService().getCardsToDeck()
