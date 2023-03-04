@@ -1,4 +1,6 @@
-import pandas as pd
+from Object.deck import Deck
+class main:
+    handPlayerA = Deck().getHand()
+    Deck().showHand()
+    #deckPlayerB = deckService().getCardsToDeck()
 
-cardsFromExcel = pd.read_excel('HearthstoneCardsList.xlsx', sheet_name='Sheet1')
-print(cardsFromExcel.head())
