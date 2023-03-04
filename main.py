@@ -1,5 +1,6 @@
-from Servis.deckService import deckService
+from Object.deck import Deck
 class main:
-    deckPlayerA=deckService().getCardsToDeck()
-    print('')
-    deckPlayerB = deckService().getCardsToDeck()
+    handPlayerA = Deck().getHand()
+    Deck().showHand()
+    #deckPlayerB = deckService().getCardsToDeck()
+
