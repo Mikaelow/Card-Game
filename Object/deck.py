@@ -26,5 +26,5 @@ class Deck:
         return hand
 
     def showHand(self, hand):
-        for i in range(0, 5):
+        for i in range(0, len(hand)):
             print(f'{hand[i].cardNames}     {hand[i].cardCost}')
